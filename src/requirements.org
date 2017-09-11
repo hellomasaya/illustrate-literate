@@ -1,0 +1,14 @@
+#+TITLE: Requirements
+#+AUTHOR: VLEAD
+#+DATE: [2017-09-11 Mon]
+#+SETUPFILE: ./org-templates/level-0.org
+#+TAGS: boilerplate(b)
+#+EXCLUDE_TAGS: boilerplate
+#+OPTIONS: ^:nil
+
+
+* Introduction
+  This document captures the requirements.
+
+* Req 1
+  Given a whole number, provide the factorial for it.

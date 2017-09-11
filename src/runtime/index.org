@@ -1,0 +1,37 @@
+#+TITLE: Implement the factorial
+#+AUTHOR: VLEAD
+#+DATE: [2017-09-11 Mon]
+#+SETUPFILE: ../org-templates/level-1.org
+#+TAGS: boilerplate(b)
+#+EXCLUDE_TAGS: boilerplate
+#+OPTIONS: ^:nil
+
+* Introduction
+  This document illustrates the implementation of factorial
+
+
+* Factorial
+  Given a whole number, factorial is calculated and
+  returned.
+  fact : n -> n
+
+  #+BEGIN_EXAMPLE
+  fact: 0 -> 1
+  fact: 1 -> 1
+  fact: 3 -> 6
+  #+END_EXAMPLE
+
+#+BEGIN_SRC python :tangle fact.py
+def fact(n):
+    if n == 0:
+        return 1
+    else:
+        return n * fact(n-1)
+
+
+if __name__ == '__main__':
+    assert fact(0) == 1
+    assert fact(1) == 1
+    assert fact(3) == 6    
+
+#+END_SRC
